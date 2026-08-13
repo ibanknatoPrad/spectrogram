@@ -5,7 +5,7 @@
 	"name": "Chromatone Spectrogram",
 	"short_name": "Spectrogram",
 	"description": "Visual time-frequency analysis for all",
-	"start_url": "/",
+	"start_url": "./",
 	"background_color": "#000000",
 	"theme_color": "#000000",
 	"display": "standalone",
