@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en" style="scroll-behavior: smooth;">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Chromatone Spectrogram</title>
+  <meta name="theme-color" content="black">
+  <meta name="application-name" content="Spectrogram">
+  <meta name="author" content="Denis Starov">
+  <meta name="creator" content="Chromatone">
+  <meta name="description" content="2.5D representation on frequency domain in color">
+  <meta property="og:title" content="Chromatone Spectrogram">
+  <meta property="og:site_name" content="Chromatone Spectrogram">
+  <meta property="og:description"
+    content="Visual audio analysis tool that shows all frequencies present in audio signal as colorful bands with trails">
+  <meta property="og:image" content="./public/spectrogram.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="Chromatone Spectrogram - Visual Audio Analysis tool">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:label1" content="Chromatone Spectrogram">
+  <meta name="twitter:label2" content="Spectrogram">
+  <meta name="twitter:site" content="@davay42">
+  <meta name="twitter:creator" content="@davay42">
+  <meta name="twitter:image:type" content="image/png">
+  <meta name="twitter:image" content="./public/spectrogram.png">
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Spectrogram">
+
+  <link rel="icon" type="image/svg+xml" href="./public/logo.svg">
+  <link rel="apple-touch-icon" href="./public/icon.png" sizes="512x512">
+
+  <link rel="manifest" href="./public/manifest.json">
+
+  <link rel="stylesheet" href="./composables/style.css">
+
+   <script src="./composables/module.js"></script>
+
+
+  <script async defer src="https://stats.chromatone.center/script.js" data-website-id="8d7609dd-8a37-4e40-8c1c-f7625d576b10"></script>
+          
+            <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js')
+          .then((registration) => {
+            console.log('Service Worker registered with scope: ', registration.scope);
+          })
+          .catch((error) => {
+            console.error('Service Worker registration failed: ', error);
+          });
+      });
+    }
+  </script>
+
+
+</head>
+
+<body style="background-color:black">
+  <div id="app"></div>
+</body>
+
+</html>
